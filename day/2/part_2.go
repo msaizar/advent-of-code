@@ -23,7 +23,6 @@ func main() {
       var integer_array = make([]int, 0, len(lines))
 
       for _, l := range lines {
-        if len(l) == 0 { continue }
         n, err := strconv.Atoi(l)
         if err != nil {
           fmt.Println(err)
